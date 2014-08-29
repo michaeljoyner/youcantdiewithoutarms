@@ -1,0 +1,53 @@
+.page-header {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0.25em;
+  position: relative;
+  clear: both;
+}
+
+.header-title {
+  font-family: $sans;
+  font-weight: 700;
+  color: $white;
+  margin: 0;
+  float: left;
+  @include respond-to(phone) {font-size: 140%;}
+}
+
+#win-count, #loss-count {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  padding: 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3em;
+  color: $white;
+}
+
+#win-count {
+  background-color: $baseblue;
+  margin-right: 2em;
+}
+
+#loss-count {
+  background-color: $crimson;
+}
+
+.stats {
+  float: right;
+  padding: 0.5em 1em;
+  font-family: $helvetica;
+  @include respond-to(phone) {font-size: 70%; margin-top: 1em;}
+  @include respond-to(smalltablet) {margin-top: 1em;}
+}
+
+.blue {
+  color: $baseblue;
+}
+
+.grey {
+  color: $midgrey;
+}

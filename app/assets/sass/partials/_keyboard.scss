@@ -1,0 +1,26 @@
+.keyboard {
+  width: 100%;
+  background-color: $midgrey;
+  padding: 3px 0;
+  display: none;
+  position: fixed;
+  bottom: 0;
+}
+
+.keyrow {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.key {
+  width: 13%;
+  height: 35px;
+  text-align: center;
+  line-height: 2em;
+  background-color: $deepgrey;
+  color: $white;
+  display: inline-block;
+  @include respond-to(smalltablet) {height: 45px; line-height: 45px;}
+  @include respond-to(largetablet) {height: 45px; line-height: 45px;}
+}

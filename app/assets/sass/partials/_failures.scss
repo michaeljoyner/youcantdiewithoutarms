@@ -1,0 +1,20 @@
+.failures {
+  width: 100%;
+  text-align: center;
+  margin-top: 3em;
+  min-height: 126px;
+  @include respond-to(phone) {margin-top: 0;
+    min-height: 0;}
+  @include respond-to(short) {margin-top: 0; min-height: 0}
+  @include respond-to(smalltablet) {margin-top: 0; min-height: 40px;}
+  @include respond-to(largetablet) {margin-top: 0; min-height: 40px;}
+}
+
+.bad-guess {
+  margin: 1em;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  font-family: $sans;
+  color: $lightgrey;
+}
