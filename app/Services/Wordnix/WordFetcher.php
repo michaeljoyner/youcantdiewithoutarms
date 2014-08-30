@@ -29,7 +29,7 @@ class WordFetcher {
 
     public function getDefinition($word)
     {
-        $response = $this->client->get($this->base_url.$word.$this->post_url.$this->apikey)->json();
+        $response = $this->client->get($this->base_url . $word . $this->post_url . $this->apikey)->json();
         return $response;
     }
 

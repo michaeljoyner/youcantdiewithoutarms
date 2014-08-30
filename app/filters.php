@@ -88,3 +88,7 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+
+Route::filter('cache.fetch', 'CacheFilter@fetch');
+Route::filter('cache.put', 'CacheFilter@put');

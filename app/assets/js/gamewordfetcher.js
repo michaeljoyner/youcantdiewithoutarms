@@ -17,7 +17,7 @@ app.game.wordFetcher = {
             if(ev.target.status == 200) {
                 app.game.wordFetcher.processListResults(ev.target.response);
             } else {
-                console.log("Error fetching words");
+                console.log("Error fetching words from server");
             }
         };
         rq.send();

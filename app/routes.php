@@ -17,5 +17,5 @@ Route::get('/', function()
 });
 
 
-Route::get('api/wordlist', 'ApiController@getWordList');
-Route::get('api/definition/{word}', 'ApiController@getDefinition');
+Route::get('api/wordlist', 'ApiController@getWordList')->before('cache.fetch')->after('cache.put');
+Route::get('api/definition/{word}', 'ApiController@getDefinition')->before('cache.fetch')->after('cache.put');
