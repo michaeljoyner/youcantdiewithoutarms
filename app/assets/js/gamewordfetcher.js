@@ -5,11 +5,10 @@ app.game = app.game || {};
 app.game.wordFetcher = {
     method: "GET",
 
-    listUrl: "http://api.wordnik.com:80/v4/words.json/randomWords?hasDictionaryDef=true&excludePartOfSpeech=proper-noun&minCorpusCount=0&maxCorpusCount=-1&minDictionaryCount=1&maxDictionaryCount=-1&minLength=6&maxLength=10&limit=80&api_key=c2ca35d3549d444dc19070b434500acf5a8ac590460e952dd",
+    listUrl: "/api/wordlist",
 
-    defBaseUrl: "http://api.wordnik.com:80/v4/word.json/",
+    defBaseUrl: "/api/definition/",
 
-    defEndUrl: "/definitions?limit=100&includeRelated=false&useCanonical=true&includeTags=false&api_key=c2ca35d3549d444dc19070b434500acf5a8ac590460e952dd",
 
     makeListRequest: function() {
         var rq = new XMLHttpRequest();
@@ -28,7 +27,7 @@ app.game.wordFetcher = {
         var wordarray = JSON.parse(response);
         var i = 0, l = wordarray.length;
         for(i;i<l;i++) {
-            var word = wordarray[i].word;
+            var word = wordarray[i];
             var regex = /^[a-zA-Z]+$/;
             if(regex.test(word)) {
                 app.game.model.wordlist.push(word.toLowerCase());
@@ -39,7 +38,7 @@ app.game.wordFetcher = {
 
     makeDefinitionRequest: function(word) {
         var rq = new XMLHttpRequest();
-        rq.open(app.game.wordFetcher.method, app.game.wordFetcher.defBaseUrl + word + app.game.wordFetcher.defEndUrl, false);
+        rq.open(app.game.wordFetcher.method, app.game.wordFetcher.defBaseUrl + word, false);
         rq.onload = function(ev) {
             if(ev.target.status == 200) {
                 app.game.wordFetcher.processDefinition(ev.target.response);

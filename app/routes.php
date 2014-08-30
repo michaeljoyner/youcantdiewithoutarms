@@ -16,7 +16,6 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::get('/key', function()
-{
-    return View::make('key');
-});
+
+Route::get('api/wordlist', 'ApiController@getWordList');
+Route::get('api/definition/{word}', 'ApiController@getDefinition');
