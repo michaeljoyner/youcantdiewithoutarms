@@ -10,7 +10,7 @@ app.game.gameUI = {
     },
 
     showKeyBoard: function() {
-        $('.keyboard').velocity("fadeIn", {display: "block", delay: 1000});
+        $('.keyboard').velocity("fadeIn", {display: "block", delay: 1000, complete: app.game.controller.listen});
     },
 
     drawBlanks: function(length) {

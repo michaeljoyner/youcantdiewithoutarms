@@ -13,8 +13,9 @@ app.game = {
         app.game.gameUI.showBoard();
         if(app.environment.isTouchScreen) {
             app.game.gameUI.showKeyBoard();
+        } else {
+            app.game.controller.listen();
         }
-        app.game.controller.listen();
         app.game.wordFetcher.makeDefinitionRequest(app.game.model.theword);
     }
 };
