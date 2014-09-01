@@ -10,11 +10,11 @@ app.game.wordFetcher = {
     defBaseUrl: "/api/definition/",
 
 
-    makeListRequest: function() {
+    makeListRequest: function () {
         var rq = new XMLHttpRequest();
         rq.open(app.game.wordFetcher.method, app.game.wordFetcher.listUrl, false);
-        rq.onload = function(ev) {
-            if(ev.target.status == 200) {
+        rq.onload = function (ev) {
+            if (ev.target.status == 200) {
                 app.game.wordFetcher.processListResults(ev.target.response);
             } else {
                 console.log("Error fetching words from server");
@@ -23,35 +23,37 @@ app.game.wordFetcher = {
         rq.send();
     },
 
-    processListResults: function(response) {
+    processListResults: function (response) {
         var wordarray = JSON.parse(response);
         var i = 0, l = wordarray.length;
-        for(i;i<l;i++) {
+        for (i; i < l; i++) {
             var word = wordarray[i];
             var regex = /^[a-zA-Z]+$/;
-            if(regex.test(word)) {
+            if (regex.test(word)) {
                 app.game.model.wordlist.push(word.toLowerCase());
             }
         }
-        app.start();
+        if (!app.environment.started) {
+            app.start();
+        }
     },
 
-    makeDefinitionRequest: function(word) {
+    makeDefinitionRequest: function (word) {
         var rq = new XMLHttpRequest();
         rq.open(app.game.wordFetcher.method, app.game.wordFetcher.defBaseUrl + word, false);
-        rq.onload = function(ev) {
-            if(ev.target.status == 200) {
+        rq.onload = function (ev) {
+            if (ev.target.status == 200) {
                 app.game.wordFetcher.processDefinition(ev.target.response);
             }
         };
         rq.send();
     },
 
-    processDefinition: function(response) {
+    processDefinition: function (response) {
         var defarray = JSON.parse(response);
         var i = 0, l = defarray.length;
         app.game.model.wordDefinitions = [];
-        for(i;i<l && i < 2;i++) {
+        for (i; i < l && i < 2; i++) {
             var definition = {
                 word: defarray[i].word,
                 partOfSpeech: defarray[i].partOfSpeech,

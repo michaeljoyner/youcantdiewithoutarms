@@ -69,5 +69,12 @@ app.game.model = {
             pos = app.game.model.theword.indexOf(letter, pos + 1);
         }
         return count;
+    },
+
+    removeWord: function(word) {
+       app.game.model.wordlist.splice(app.game.model.wordlist.indexOf(word), 1);
+        if(app.game.model.wordlist.length < 2) {
+            app.game.wordFetcher.makeListRequest();
+        }
     }
 };

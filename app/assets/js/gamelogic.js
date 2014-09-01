@@ -35,6 +35,7 @@ app.game.logic = {
             app.game.gameUI.endGame();
             app.model.incrementWins();
             app.game.gameUI.showWin();
+            app.game.model.removeWord(app.game.model.theword);
         } else if(app.game.model.numberOfBadGuesses >= 6) {
             app.game.gameUI.endGame();
             app.model.incrementLosses();

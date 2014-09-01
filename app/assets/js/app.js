@@ -9,11 +9,12 @@ var app = {
     },
 
     environment: {
-        isTouchScreen: false
+        isTouchScreen: false,
+        started: false
     },
 
     init: function () {
-        app.environment.isTouchScreen = 'ontouchstart' in window || 'onmsgesturechange' in window;
+        app.environment.isTouchScreen = 'ontouchstart' in window || window.navigator.msMaxTouchPoints;
         if (app.environment.isTouchScreen) {
             app.elems.startPrompt.firstChild.innerHTML = "tap screen to start new game";
         }
@@ -29,6 +30,7 @@ var app = {
     },
 
     start: function() {
+        app.environment.started = true;
         app.appUI.clearLoading();
         app.controller.listen();
     }
