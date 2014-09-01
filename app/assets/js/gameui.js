@@ -123,11 +123,24 @@ app.game.gameUI = {
         app.game.controller.stopListening();
         app.game.gameUI.dropLetters();
         app.game.gameUI.removeBadGuesses();
-        for(i;i<l;i++) {
-            app.game.gameUI.makeDefinitions(app.game.model.failureDefinitions[i]);
-        }
+        //for(i;i<l;i++) {
+        //    app.game.gameUI.makeDefinitions(app.game.model.failureDefinitions[i]);
+        //}
+        app.game.gameUI.makeTaunt(app.game.model.taunts[Math.floor(Math.random()*app.game.model.taunts.length)]);
+        app.game.gameUI.showTaunt();
         $('.definition-box').velocity("transition.slideUpIn", {stagger: 100});
         app.controller.listen();
+    },
+
+    makeTaunt: function(taunt) {
+        var span = document.createElement('span');
+        span.className = "taunt";
+        span.innerHTML = '"' + taunt + '"';
+        app.game.gameUI.anchors.notices.appendChild(span);
+    },
+
+    showTaunt: function() {
+      $('.taunt').velocity("transition.swoopIn", {display: "block"});
     },
 
     dropLetters: function() {

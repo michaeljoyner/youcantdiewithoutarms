@@ -28,6 +28,14 @@ app.game.model = {
 
     badguesses: [],
 
+    taunts: ["You should be on the cover of Failure Magazine",
+    "Darwin would be fascinated by you",
+    "If failure was money, you'd be Donald trump",
+    "When do you plan on reading your first book?",
+    "Failure doesn't count as a hobby",
+    "Do you still say the rhyme when you tie your shoelaces?",
+    "You have very childlike features. Most of all your brain."],
+
     reset: function() {
         app.game.model.theword = null;
         app.game.model.numberOfLettersGuessed = 0;
