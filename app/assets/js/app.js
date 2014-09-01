@@ -19,6 +19,7 @@ var app = {
             app.elems.startPrompt.firstChild.innerHTML = "tap screen to start new game";
         }
         app.game.wordFetcher.makeListRequest();
+        app.model.initializeStats();
     },
 
     startGame: function() {
