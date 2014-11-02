@@ -7,7 +7,6 @@ app.game.controller = {
         if(app.environment.isTouchScreen) {
             var keyboard = document.querySelector('.keyboard');
             keyboard.addEventListener('touchstart', app.game.controller.handleKeyPress, false);
-            alert('should be listening...');
         } else {
             var body = document.querySelector("body");
             body.addEventListener('keypress', app.game.controller.handleKeyPress, false);
