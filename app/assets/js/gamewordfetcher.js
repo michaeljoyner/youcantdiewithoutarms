@@ -34,6 +34,7 @@ app.game.wordFetcher = {
             }
         }
         if (!app.environment.started) {
+            alert('starting..');
             app.start();
         }
     },

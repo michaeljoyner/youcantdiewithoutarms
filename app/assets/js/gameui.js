@@ -32,9 +32,9 @@ app.game.gameUI = {
     },
 
     clearBoard: function() {
-        app.game.gameUI.anchors.wordholder.innerHTML = '';
-        app.game.gameUI.anchors.failbox.innerHTML = '';
-        app.game.gameUI.anchors.notices.innerHTML = '';
+        $(app.game.gameUI.anchors.wordholder).empty();
+        $(app.game.gameUI.anchors.failbox).empty();
+        $(app.game.gameUI.anchors.notices).empty();
     },
 
     showLetter: function(letter, positions) {
