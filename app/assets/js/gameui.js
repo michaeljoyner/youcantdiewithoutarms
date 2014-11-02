@@ -11,7 +11,7 @@ app.game.gameUI = {
 
     showKeyBoard: function() {
         $('.keyboard').velocity("fadeIn", {display: "block", delay: 1000});
-        app.game.controller.listen();
+        setTimeout(app.game.controller.listen, 2000);
     },
 
     drawBlanks: function(length) {
