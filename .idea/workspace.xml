@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gamemodel.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/js/gamemodel.js">
+      <file leaf-file-name="gamecontroller.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/js/gamecontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.074165635" vertical-offset="1710" max-vertical-offset="2790">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.51915944" vertical-offset="0" max-vertical-offset="1710">
+              <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -681,20 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/js/appcontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22249691" vertical-offset="0" max-vertical-offset="809">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.592089" vertical-offset="391" max-vertical-offset="1290">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/js/gamewordfetcher.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.11248455" vertical-offset="1171" max-vertical-offset="2130">
@@ -702,10 +688,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/js/gamemodel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.074165635" vertical-offset="1710" max-vertical-offset="2790">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="{&quot;theword&quot;: null...}" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="{&quot;word&quot;: &quot;failure&quot;...}" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="{&quot;word&quot;: &quot;failure&quot;...}" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1415075217744" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/js/gamelogic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70333743" vertical-offset="661" max-vertical-offset="1500">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding>
+            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/js/appcontroller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29666254" vertical-offset="0" max-vertical-offset="809">
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+          <folding>
+            <marker date="1409452458679" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409452458679" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409452458679" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409452458679" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409452458679" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409452458679" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409452458679" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51792336" vertical-offset="451" max-vertical-offset="1290">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding>
+            <marker date="1409539944039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409539944039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409539944039" expanded="true" signature="-1:-1" placeholder="{&quot;isTouchScreen&quot;: false...}" />
+            <marker date="1409539944039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409539944039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409539944039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409539944039" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409539944039" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/js/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51915944" vertical-offset="0" max-vertical-offset="809">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <marker date="1409455529611" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409455529611" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409455529611" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409455529611" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1409455529611" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/js/gameui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44499382" vertical-offset="0" max-vertical-offset="5130">
-          <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+        <state vertical-scroll-proportion="0.40667492" vertical-offset="61" max-vertical-offset="5130">
+          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
           <folding>
             <marker date="1414897531810" expanded="true" signature="-1:-1" placeholder="{...}" />
             <marker date="1414897531810" expanded="true" signature="-1:-1" placeholder="{...}" />
@@ -743,65 +820,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/js/gamelogic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4437577" vertical-offset="571" max-vertical-offset="1500">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1409536058689" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/js/gamecontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.37082818" vertical-offset="810" max-vertical-offset="1620">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <marker date="1415075159461" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1415075159461" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1415075159461" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1415075159461" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1415075159461" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1415075159461" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1415075159461" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1415075159461" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1415075159461" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1415075159461" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1415075159461" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1415075159461" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1415075159461" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/js/game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51915944" vertical-offset="0" max-vertical-offset="809">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <marker date="1409455529611" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1409455529611" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1409455529611" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1409455529611" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1409455529611" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/js/gamemodel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.074165635" vertical-offset="1710" max-vertical-offset="2790">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.51915944" vertical-offset="0" max-vertical-offset="1710">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
           <folding />
         </state>
       </provider>
