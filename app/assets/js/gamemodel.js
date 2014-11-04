@@ -57,11 +57,9 @@ app.game.model = {
     },
 
     positionsOfLetter: function(letter) {
-        console.log('finding positions...');
         var positions = [];
         var pos = app.game.model.theword.indexOf(letter);
         while(pos != -1) {
-            console.log('looping...');
             positions.push(pos);
             pos = app.game.model.theword.indexOf(letter, pos + 1);
         }
@@ -72,11 +70,9 @@ app.game.model = {
     },
 
     occurancesOfLetterInWord: function(letter) {
-        console.log('counting letters...');
         var count = 0;
         var pos = app.game.model.theword.indexOf(letter);
         while(pos != -1) {
-            console.log('looping in count...');
             count++;
             pos = app.game.model.theword.indexOf(letter, pos + 1);
         }

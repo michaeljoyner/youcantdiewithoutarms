@@ -6,6 +6,9 @@ app.game.controller = {
     listen: function() {
         if(app.environment.isTouchScreen) {
             var keyboard = document.querySelector('.keyboard');
+            while(!keyboard) {
+                keyboard = document.querySelector('.keyboard');
+            }
             keyboard.addEventListener('touchstart', app.game.controller.handleKeyPress, false);
         } else {
             var body = document.querySelector("body");
@@ -27,7 +30,7 @@ app.game.controller = {
         ev.stopPropagation();
         var key;
         if(ev.type === "keypress") {
-            key = String.fromCharCode(ev.charCode ||ev.keyCode);
+            key = String.fromCharCode(ev.charCode || ev.keyCode);
             var re = /[a-zA-Z]/;
             if(! re.test(key)) {
                 console.log('failed');
@@ -36,6 +39,10 @@ app.game.controller = {
         } else if(ev.type === "touchstart") {
             var id = ev.target.id;
             key = id.substring(3);
+            if(key == "") {
+                console.log("misspress");
+                return;
+            }
         }
         app.game.logic.handleGuess(key.toLowerCase());
     }
