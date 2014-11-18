@@ -11,8 +11,8 @@ app.game.controller = {
                 keyboard = document.querySelector('.keyboard');
             }
             keyboard.addEventListener('touchstart', app.game.controller.handleKeyPress, false);
-            console.log('attached listener to ');
-            console.log(keyboard);
+            var body = document.querySelector("body");
+            body.addEventListener('touchstart', app.game.controller.saveLost, false);
         } else {
             var body = document.querySelector("body");
             body.addEventListener('keypress', app.game.controller.handleKeyPress, false);
@@ -23,6 +23,8 @@ app.game.controller = {
         if(app.environment.isTouchScreen) {
             var keyboard = document.querySelector('.keyboard');
             keyboard.removeEventListener('touchstart', app.game.controller.handleKeyPress, false);
+            var body = document.querySelector("body");
+            body.removeEventListener('touchstart', app.game.controller.saveLost, false);
         } else {
             var body = document.querySelector("body");
             body.removeEventListener('keypress', app.game.controller.handleKeyPress, false);
@@ -48,5 +50,8 @@ app.game.controller = {
             }
         }
         app.game.logic.handleGuess(key.toLowerCase());
+    },
+    saveLost: function() {
+        console.log('got it');
     }
 };
